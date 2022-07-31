@@ -1,3 +1,5 @@
+// Ivan - fetch tramite chiamata su API e forEach
+export const getTable = () => 
 fetch ('https://api.spaceflightnewsapi.net/v3/articles')
     .then(res => res.json())
      .then(data => {
@@ -6,15 +8,14 @@ fetch ('https://api.spaceflightnewsapi.net/v3/articles')
         const title = (article.title)
         const url = (article.url)
         const date = (article.publishedAt)
-        const author = (article.newsSite)
-
-        
-        //scrivi qua le tue funzioni 
     
+
+// Alice -- Start
+
+
+
+
     })
-    });
+});
 
-
-
-
-
+ //Alice -- End 
