@@ -7,8 +7,6 @@ fetch ('https://api.spaceflightnewsapi.net/v3/articles')
         const title = (article.title)
         const url = (article.url)
         const date = (article.publishedAt)
-    
-        console.log(title)
 // Alice -- Start
 
 
