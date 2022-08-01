@@ -4,3 +4,6 @@
 #sass
 .sass-cache/
 *.css.map
+
+#
+.env
