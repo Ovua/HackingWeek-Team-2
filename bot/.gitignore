@@ -1,5 +1,1 @@
-#moduletoken
-.env
-
-#node
-/node_modules
+node_modules/
