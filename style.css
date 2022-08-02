@@ -295,4 +295,6 @@ main p {
     border-radius: 100px;
     filter: invert();
     mix-blend-mode: multiply;
+    width: 100px;
+    height: 100px;
 }
