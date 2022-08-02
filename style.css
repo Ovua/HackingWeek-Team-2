@@ -290,6 +290,10 @@ main p {
     margin-left: 2rem;
 }
 
+.logo{
+  text-align: center;
+}
+
 .logo img {
     margin-left: 30px;
     border-radius: 100px;
