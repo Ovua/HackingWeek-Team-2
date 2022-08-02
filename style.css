@@ -42,7 +42,7 @@ aside {
     border-radius: 0 20px 0px 0px ;
 }
 
- .second{
+ .aside-element{
    background-color:#cb81ff;
    position: absolute;
    z-index: -3;
