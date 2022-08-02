@@ -1,22 +1,20 @@
-const body = document.querySelector('body'),
-sidebar = body.querySelector('nav'),
-toggle = body.querySelector(".toggle"),
-modeSwitch = body.querySelector(".toggle-switch"),
-modeText = body.querySelector(".mode-text");
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();
+  });
 
 
-toggle.addEventListener("click" , () =>{
-sidebar.classList.toggle("close");
-})
+  // DOM Selectors
+const body = document.querySelector("body");
+const switchBtn = document.getElementById("switch");
+const root = document.querySelector(":root");
 
-
-modeSwitch.addEventListener("click" , () =>{
-body.classList.toggle("dark");
-
-if(body.classList.contains("dark")){
-  modeText.innerText = "Light mode";
-}else{
-  modeText.innerText = "Dark mode";
-  
-}
+// Change theme
+switchBtn.addEventListener("change", () => {
+toggleRootClass();
 });
+
+function toggleRootClass() {
+document.querySelector(":root").classList.toggle("dark");    // background nero
+document.querySelector(":root").classList.toggle("color"); // gestisco il colore del main
+document.querySelector(":root").classList.toggle("invert")
+}
