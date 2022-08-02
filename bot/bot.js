@@ -19,7 +19,7 @@ client.on("ready", () => {
 // funzione PLUS - informazioni e sessione help del bot 
 function Info() {
 	client.on("message",  (msg) => {
-		if (msg.content.includes("@here")              //con questa funzione evito di chiamare il BOT attraverso suffissi come "here" / "everyone / reply ho preferito inserirla come metodo di sicurezza"
+		if (msg.content.includes("@here")              //funzione di sicurezza evito di chiamare il BOT attraverso suffissi come "here" / "everyone / reply 
 		|| msg.content.includes("@everyone") 
 		|| msg.type == "REPLY") return false;
         const mentionBot = msg.mentions.has(client.user.id)
