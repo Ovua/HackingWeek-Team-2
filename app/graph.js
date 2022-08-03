@@ -127,7 +127,7 @@ const myChart2 = new Chart(ctx2, {
     datasets: [
       {
         axis: "y",
-        label: "SpaceNews publications",
+        label: "SpaceFlight Insider publications",
         data: stats,
         borderColor: ["rgba(255, 99, 132, 1)"],
         backgroundColor: ["rgba(255, 99, 132, 0.2)"],
@@ -154,7 +154,7 @@ const myChart2 = new Chart(ctx2, {
     plugins: {
       title: {
         display: true,
-        text: "Monthly publications of 2022, by SpaceNews",
+        text: "Monthly publications of 2022, by SpaceFlight Insider",
         font: {
           size: 30,
         },
