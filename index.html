@@ -22,7 +22,7 @@
         
         <li><a href="https://github.com/Ovua/HackingWeek-Team-2"><i data-toggle="tooltip" data-placement="right" title="About" class="bi imgg" aria-hidden="true"><img src="./src/team_2.png" alt=""></i></a></li>
         <li><a href="#"><i data-toggle="tooltip" data-placement="right" title="Calendar" class="bi bi-calendar-range" aria-hidden="true"></i></a></li>
-        <li><a href="#"><i data-toggle="tooltip" data-placement="right" title="Articles" class="bi bi-pencil-square" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i data-toggle="tooltip" data-placement="right" title="Articles" class="bi bi-pencil-square" aria-hidden="true" id="table-button"></i></a></li>
         <li><a href="#"><i data-toggle="tooltip" data-placement="right" title="Charts" class="bi bi-bar-chart-steps"></i></a></li>
     </ul>
 
@@ -34,13 +34,24 @@
 </aside>
 
 <main>
-    
+
     <div class="logo"><img src="./src/spaceDose.jpg"alt=""></p>
 
         <div class="container">
 
         </div> 
     </div>
+
+    <!--table-->
+    <div class="table-container">
+        <select class="table-select">
+        </select>
+
+        <table id="table">
+        </table>
+        <button id="table-export">Esporta file CSV</button>
+      </div>
+<!--end table-->
 </main>
 
 <script defer  src="./app/script.js"></script>
