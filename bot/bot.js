@@ -1,4 +1,3 @@
-
 const Discord = require('discord.js');
 const dotenv = require('dotenv')
 dotenv.config()
@@ -37,7 +36,7 @@ function Info() {
            //per evitare conflitti con altri bot, le info verranno stampate solo se il bot e' menzionato 
     if (mentionBot 
     || mentionBot && msg.content.includes(prefix+'info')                           
-	||  mentionBot && msg.content.includes(prefix+'help')) { // due comandi info ed help 
+	|| mentionBot && msg.content.includes(prefix+'help')) { // due comandi info ed help 
 			msg.reply(embed);
 
 	} else if (mentionBot && msg.content.includes(prefix+'who')) { // informazioni relative all developer
@@ -127,14 +126,6 @@ function summaryID() {
     });
 }
 summaryID()
-
-
-
-
-
-
-
-
 
 
 client.login(process.env.TOKEN);
