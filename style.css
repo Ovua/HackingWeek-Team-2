@@ -255,10 +255,6 @@ label {
   height: 50rem;
 }
 
-/* #chart-displayer {
+#chart-displayer {
   display: none;
-} */
-
-.chart-show {
-  display: unset;
-}
+} 
