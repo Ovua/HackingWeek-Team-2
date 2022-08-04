@@ -178,4 +178,3 @@ const chartBtn = document.getElementById("chart-btn");
 chartBtn.addEventListener("click", displayCharts);
 
 
-

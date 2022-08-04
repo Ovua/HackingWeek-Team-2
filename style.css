@@ -14,12 +14,7 @@
  :root.invert .logo img {
      mix-blend-mode: difference;
 }
-
-:root.opt option {
-    background-color: #131313a9
-}
-
-* {
+ * {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -31,7 +26,6 @@
      display: flex;
 }
  aside {
-    position: relative;
      margin-left: 5rem;
      padding-top: 3rem;
      height: 100%;
@@ -169,14 +163,11 @@
      border-radius: 50%;
 }
  .moon {
-     position: absolute;
      font-size: 1.7rem;
      height: 100%;
-     top: 0.5rem;
-     right: 1rem;
 }
  label {
-    
+     display: flex;
 }
  label .bi {
      font-size: 2.4rem;
@@ -219,17 +210,18 @@
 
 /* Calendar */
 .container-calendar {
-  height: 100vh;
-}
-.container-calendar .calendar {
-  height: 100%;
-  right: 0;
-  left: 0;
-  bottom: 0;
-  top: 0;
-  position: fixed;
-}
-/* Calendar End */
+    height: 100vh;
+    display: none;
+  }
+  .container-calendar .calendar {
+    height: 100%;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    position: fixed;
+  }
+  /* Calendar End */
 
 /* Charts */
 .piechart-container {
@@ -251,24 +243,6 @@
 
 /* Charts End */
 
-@media screen and (max-width: 768px) {
-     .aside-element {
-         display: none;
-    }
-     aside {
-         margin-left: 0;
-    }
-     ul li:first-child {
-         display: none;
-    }
-     label {
-         position: absolute;
-         top: 1rem;
-         left: 0;
-    }
-}
-
-
 /*table*/
 .table-first-line {
     display: flex;
@@ -282,11 +256,11 @@
   margin-right: 50px;
   margin-bottom: 50px;
 }
-tbody {
+/* tbody {
     overflow-y: scroll;
     display: block;
     height: 400px;
-  }
+  } */
 tr {
 border-bottom: 1px solid white;
 border-collapse: collapse;
@@ -320,49 +294,25 @@ font-size: large;
 #table-export:hover {
 cursor: pointer;
 }
-.display-none {
-display: none;
-}
 
 option {
     background-color: #b1d2eaa9 ;
 }
-/*end table*/
-
+/* end table */
 
 @media screen and (max-width: 768px) {
-    .aside-element {
-        display: none;
-   }
-    aside {
-        margin-left: 0;
-   }
-    ul li:first-child {
-        display: none;
-   }
-    label {
-        position: absolute;
-        top: 1rem;
-        left: 0;
-   }
-
-   tbody {
-    width: 400px;
+     .aside-element {
+         display: none;
     }
-    
-    #table-export {
-    margin-left: 100px;
+     aside {
+         margin-left: 0;
     }
-
-    tbody {
-    width: 500px;
+     ul li:first-child {
+         display: none;
     }
-
-    #table {
-    margin-right: 100px;
-    }
-    
-    .table-container {
-    margin-right: 100px;
+     label {
+         position: absolute;
+         top: 1rem;
+         left: 0;
     }
 }

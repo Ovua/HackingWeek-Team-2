@@ -5,7 +5,7 @@ let newsArray = []
 async function fetcher(url){
     const response = await fetch(url);
     let data = await response.json();
-    let newsSite = data.forEach(element => {(element.newsSite)
+    let newsSite = data.forEach(element => {console.log(element.newsSite)
     });
 
     function tabCreator() {
