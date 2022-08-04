@@ -51,6 +51,7 @@ Le features sono collegate attraverso HTML/SCSS/Javascript, si è scelto un meto
 
 ## Bot Discord 🤖
 Il nostro Bot si chiama SpaceNews
+E' hostato su heroku.com (24/7)
 
 Features:
 - /articles ⇒ ritorna gli ID tutti gli articoli
