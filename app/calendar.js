@@ -1,11 +1,10 @@
-// //Questo modulo permette l'import del calendario
 let url = 'https://api.spaceflightnewsapi.net/v3/articles?_limit=30'
 
 document.addEventListener('DOMContentLoaded', function() {
   var calendarEl = document.getElementById('calendar');
 
   let calendar = new FullCalendar.Calendar(calendarEl, {
-    titleFormat: { // will produce something like "Tuesday, September 18, 2018"
+    titleFormat: { 
       month: 'long',
       year: 'numeric',
     },  
@@ -18,11 +17,11 @@ document.addEventListener('DOMContentLoaded', function() {
     initialDate: '2022-08-01',
     height: '100%',
     expandRows: true,
-    navLinks: true, // can click day/week names to navigate views
+    navLinks: true, 
     editable: true,
     selectable: true,
     nowIndicator: true,
-    dayMaxEvents: true, // allow "more" link when too many events
+    dayMaxEvents: true, 
 })
 
 

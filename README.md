@@ -53,12 +53,12 @@ Le features sono collegate attraverso HTML/SCSS/Javascript, si è scelto un meto
 Il nostro Bot si chiama SpaceNews
 
 Features:
-- Menziona il bot "@" per visualizzare la Command List (oppure @ /info - /help)
-- /articles ⇒ ritorna gli ID di 10 articoli (limite fissato a 10)
-- /articles/authors ⇒ ritorna la lista di autori o della provenienza degli articoli
+- /articles ⇒ ritorna gli ID tutti gli articoli
+- /articles/authors ⇒ lista di autori degli articoli
 - /articles/{id} ⇒ ritorna il testo dell’articolo
-- Menziona il bot '@' e inserisci /who per scoprrire chi sono 
-- Menziona il bot '@' e inserisci /version per scoprrire la versione del Bot  
+- @SpaceNews /info ⇒ per visualizzare questo elenco
+- @SpaceNews /who ⇒ per scoprrire chi sono 
+- @SpaceNews /version ⇒ versione del Bot
 
 
 
