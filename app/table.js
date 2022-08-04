@@ -1,14 +1,5 @@
-function display() {
-    let tableContainer = document.querySelector('.table-container');
-    tableContainer.classList.remove('display-none')
-}
-
-let tableButton = document.querySelector('#table-button');
-tableButton.addEventListener('click', display)
-
-
 const urlData = 'https://api.spaceflightnewsapi.net/v3/articles'
-
+let newsArray = []
 
 
 async function fetcher(url){
@@ -42,20 +33,47 @@ async function fetcher(url){
     
 
     function selectCreator() {
+        
         let select = document.querySelector('.table-select')
-        console.log(newsSite)
 
         for (let j of data) {
+            if( !newsArray.includes(j.newsSite) ) {
+                newsArray.push(j.newsSite)
+            }
+        }
+
+        for (let x of newsArray) {
             let option = document.createElement('option');
-            let optionText = document.createTextNode(`${j.newsSite}`);
+            let optionText = document.createTextNode(`${x}`);
             option.appendChild(optionText);
             select.appendChild(option);
         }
+
     }
 
     selectCreator()
-}
+    function update() {
+        let autore = document.getElementById("author");
+        let pick = autore.value.toUpperCase();
+        let space = pick.replace(/ /g, "")
+        let table = document.getElementById("table");
+        let tr = table.getElementsByTagName("tr");
+        for (let i = 0; i < tr.length; i++) {
+          let td = tr[i].getElementsByTagName("td")[0];
+          if (td) {
+            if (td.innerHTML.toUpperCase().indexOf(space) > -1) {
+              tr[i].style.display = "";
+            } else {
+              tr[i].style.display = "none";
+            }
+          }     
+        }
+      }
+    
+    const select = document.getElementById('author');
+    select.addEventListener('change', update)
 
+}
 
 fetcher(urlData)
 
@@ -104,3 +122,15 @@ document.getElementById("table-export").addEventListener("click", function () {
 
 
 
+//buttons
+function display() {
+    let tableContainer = document.querySelector('.table-container');
+    let chartWrapper = document.getElementById("chart-displayer");
+    let calendarContainer = document.getElementById("container-calendar");
+    tableContainer.style.display = 'block'
+    chartWrapper.style.display = "none";
+    calendarContainer.style.display = "none";
+  }
+  
+  let tableButton = document.querySelector('#table-button');
+  tableButton.addEventListener('click', display)
