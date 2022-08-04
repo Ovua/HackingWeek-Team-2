@@ -11,7 +11,7 @@
  :root.color main {
      color: white 
 }
- :root.invert .logo img {
+ :root.invert .logo #logo {
      mix-blend-mode: difference;
 }
  * {
@@ -190,7 +190,7 @@
  .logo {
      text-align: center;
 }
- .logo img {
+ .logo #logo {
      margin-top: 2rem;
      border-radius: 10rem;
      filter: invert();
