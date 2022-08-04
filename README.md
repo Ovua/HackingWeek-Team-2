@@ -44,7 +44,7 @@ per permettere la possibilità di aggiungere la feature Dark-mode e le rispettiv
 E' stato scelto un layout di questo tipo che permettesse l'utilizzo di bootstrap come da task senza escludere il lato creativo, il risultato è un layout personalizzato e dinamico.
 
 
-Le features sono collegate attraverso HTML/SCSS/Javascript, si è scelto un metodo a moduli esterni per quanto riguarda le diverse task richieste (Calendar/Table/Chart) in maniera tale da tenere un ordine specifico che permettesse di valutare in maniera ordinata le funzionalità.
+Le features sono collegate attraverso HTML/CSS/Javascript, si è scelto un metodo a moduli esterni per quanto riguarda le diverse task richieste (Calendar/Table/Chart) in maniera tale da tenere un ordine specifico che permettesse di valutare in maniera ordinata le funzionalità.
 
 
 
