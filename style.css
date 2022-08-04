@@ -14,6 +14,9 @@
  :root.invert .logo #logo {
      mix-blend-mode: difference;
 }
+:root.opt option {
+    background-color: #131313a9
+}
  * {
      margin: 0;
      padding: 0;
