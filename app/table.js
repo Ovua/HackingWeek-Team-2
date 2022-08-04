@@ -126,7 +126,7 @@ document.getElementById("table-export").addEventListener("click", function () {
 function display() {
     let tableContainer = document.querySelector('.table-container');
     let chartWrapper = document.getElementById("chart-displayer");
-    let calendarContainer = document.getElementById("container-calendar");
+    let calendarContainer = document.getElementById("calendar-container");
     tableContainer.style.display = 'block'
     chartWrapper.style.display = "none";
     calendarContainer.style.display = "none";

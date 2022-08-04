@@ -41,7 +41,7 @@ fetch(url)
 function displayCalendar() {
     const chartWrapper = document.getElementById("chart-displayer");
     const tableContainer = document.querySelector(".table-container");
-    const calendarContainer = document.getElementById('calendarContainer')
+    const calendarContainer = document.getElementById("calendar-container")
     calendarContainer.style.display = "block";
     chartWrapper.style.display = "none";
     tableContainer.style.display = "none";

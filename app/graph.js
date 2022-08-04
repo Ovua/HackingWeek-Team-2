@@ -168,8 +168,10 @@ const myChart2 = new Chart(ctx2, {
 function displayCharts() {
   const chartWrapper = document.getElementById("chart-displayer");
   const tableContainer = document.querySelector(".table-container");
+  const calendarContainer = document.getElementById("calendar-container")
   chartWrapper.style.display = "block";
   tableContainer.style.display = "none";
+  calendarContainer.style.display = "none";
 }
 
 const chartBtn = document.getElementById("chart-btn");
