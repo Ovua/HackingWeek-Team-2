@@ -22,7 +22,7 @@ Ci siamo incontrati per lo scrum giornaliero attraverso il Server discord del te
 
 ##  GitFiles 📁
 Abbiamo utilizzato file come .env per nascondere i token relativi al Bot ed è stato inserito un file .gitignore per evitare il pull di folder quali:
-node-modules, scss.map ed env
+node-modules ed env
  ### API Utilizzate
 - [Spaceflight News API](https://spaceflightnewsapi.net/)
 - [FullCalendar](https://fullcalendar.io)
