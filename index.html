@@ -11,6 +11,8 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script defer type="module" src="./app/table.js"></script>
+      <script src='lib/main.js'></script>
+      <link href='lib/main.css' rel='stylesheet' />  
       <script defer type="module" src="./app/calendar.js"></script>
       <script defer type="module" src="./app/graph.js"></script>        
       <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
@@ -19,9 +21,9 @@
       <div class="aside-element"></div>
       <aside>
          <ul>
-           <li><a href="https://discord.gg/5ZdTKKNT"><i data-toggle="tooltip" data-placement="bottom" title="Discord" class="bi imgg" aria-hidden="true"><img src="./src/discordbot.jpg" alt=""></i></a></li>
-           <li><a href="#"><i data-toggle="tooltip" data-placement="bottom" title="Calendar" class="bi bi-calendar-range" aria-hidden="true"></i></a></li>
-           <li><a href="#"><i data-toggle="tooltip" data-placement="bottom" title="Articles" class="bi bi-pencil-square" aria-hidden="true"></i></a></li>
+           <li><a href="https://discord.gg/5ZdTKKNT" target="_blank"><i data-toggle="tooltip" data-placement="bottom" title="Discord" class="bi imgg" aria-hidden="true"><img src="./src/discordbot.jpg" alt=""></i></a></li>
+           <li id="calendar-btn"><a href="#"><i data-toggle="tooltip" data-placement="bottom" title="Calendar" class="bi bi-calendar-range" aria-hidden="true"></i></a></li>
+           <li id="table-button"><a href="#"><i data-toggle="tooltip" data-placement="bottom" title="Articles" class="bi bi-pencil-square" aria-hidden="true"></i></a></li>
            <li id="chart-btn"><a href="#"><i data-toggle="tooltip" data-placement="bottom" title="Charts"class="bi bi-bar-chart-steps"></i></a></li>
          </ul>
          <label class="switch" id="switch">
@@ -43,7 +45,21 @@
              </div>
             </div>
          </div>
+
+         <!--table-->
+    <div class="table-container" style="display:none;">
+      <div class="table-first-line">
+        <select class="table-select" id="author">
+            <option value="">Seleziona</option>
+        </select>
+        <button id="table-export">Esporta file CSV</button>
+      </div>
+        <table id="table">
+        </table>
+        
+<!--end table-->
+
       </main>
-      <script defer  src="./app/script.js"></script>
+   <script defer src="./app/script.js"></script>
    </body>
 </html>

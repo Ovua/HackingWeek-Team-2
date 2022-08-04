@@ -14,7 +14,12 @@
  :root.invert .logo img {
      mix-blend-mode: difference;
 }
- * {
+
+:root.opt option {
+    background-color: #131313a9
+}
+
+* {
      margin: 0;
      padding: 0;
      box-sizing: border-box;
@@ -26,6 +31,7 @@
      display: flex;
 }
  aside {
+    position: relative;
      margin-left: 5rem;
      padding-top: 3rem;
      height: 100%;
@@ -163,11 +169,14 @@
      border-radius: 50%;
 }
  .moon {
+     position: absolute;
      font-size: 1.7rem;
      height: 100%;
+     top: 0.5rem;
+     right: 1rem;
 }
  label {
-     display: flex;
+    
 }
  label .bi {
      font-size: 2.4rem;
@@ -256,5 +265,104 @@
          position: absolute;
          top: 1rem;
          left: 0;
+    }
+}
+
+
+/*table*/
+.table-first-line {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+#table {
+  border: 1px solid white;
+  border-radius: 10px;
+  background-color: transparent;
+  margin-right: 50px;
+  margin-bottom: 50px;
+}
+tbody {
+    overflow-y: scroll;
+    display: block;
+    height: 400px;
+  }
+tr {
+border-bottom: 1px solid white;
+border-collapse: collapse;
+}
+td {
+padding: 20px;
+color: var(--text-color);
+}
+.table-select {
+margin: 20px 0;
+font-size: large;
+}
+.table-select {
+  font-size: 14px;
+  background-color: transparent;
+  border-color: white;
+  color: var(--text-color);
+}
+
+
+#table-export {
+  font-size: 14px;
+  border-radius: 5px;
+  padding: 3px;
+  background-color: transparent;
+  border: 1px solid white;
+  color: var(--text-color);
+  margin: 20px 0;
+  white-space: nowrap;
+}
+#table-export:hover {
+cursor: pointer;
+}
+.display-none {
+display: none;
+}
+
+option {
+    background-color: #b1d2eaa9 ;
+}
+/*end table*/
+
+
+@media screen and (max-width: 768px) {
+    .aside-element {
+        display: none;
+   }
+    aside {
+        margin-left: 0;
+   }
+    ul li:first-child {
+        display: none;
+   }
+    label {
+        position: absolute;
+        top: 1rem;
+        left: 0;
+   }
+
+   tbody {
+    width: 400px;
+    }
+    
+    #table-export {
+    margin-left: 100px;
+    }
+
+    tbody {
+    width: 500px;
+    }
+
+    #table {
+    margin-right: 100px;
+    }
+    
+    .table-container {
+    margin-right: 100px;
     }
 }

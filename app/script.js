@@ -16,4 +16,5 @@ function toggleRootClass() {
   document.querySelector(":root").classList.toggle("dark"); // background nero
   document.querySelector(":root").classList.toggle("color"); // gestisco il colore del main
   document.querySelector(":root").classList.toggle("invert");
+  document.querySelector(":root").classList.toggle("opt");
 }
