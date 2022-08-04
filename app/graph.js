@@ -163,11 +163,17 @@ const myChart2 = new Chart(ctx2, {
   },
 });
 
-const chartBtn = document.getElementById("chart-btn");
-const chartWrapper = document.getElementById("graph-displayer");
-
 //Switch to Chart View
 
-chartBtn.addEventListener("click", () => {
-  chartWrapper.classList.toggle("chart-show");
-});
+function displayCharts() {
+  const chartWrapper = document.getElementById("chart-displayer");
+  const tableContainer = document.querySelector(".table-container");
+  chartWrapper.style.display = "block";
+  tableContainer.style.display = "none";
+}
+
+const chartBtn = document.getElementById("chart-btn");
+chartBtn.addEventListener("click", displayCharts);
+
+
+
